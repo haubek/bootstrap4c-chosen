@@ -54,10 +54,12 @@
       .chosen-container .chosen-results li.group-result {
         display: list-item;
         cursor: default;
-        color: #464a4c;
-        font-weight: normal; }
+        padding-left: .75rem;
+        color: #636c72;
+        font-weight: normal;
+        text-transform: uppercase; }
       .chosen-container .chosen-results li.group-option {
-        padding-left: 1rem; }
+        padding-left: 1.5rem; }
       .chosen-container .chosen-results li.active-result {
         cursor: pointer;
         display: list-item; }
@@ -315,3 +317,10 @@
     cursor: default; }
   .chosen-disabled .chosen-choices .search-choice .search-choice-close {
     cursor: default; }
+
+.chosen-container-optgroup-clickable li.group-result {
+  text-transform: none !important; }
+  .chosen-container-optgroup-clickable li.group-result:hover {
+    background-color: #0275d8;
+    color: white;
+    cursor: pointer; }

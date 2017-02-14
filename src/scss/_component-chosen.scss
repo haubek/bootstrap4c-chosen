@@ -46,11 +46,13 @@
       &.group-result {
         display: list-item;
         cursor: default;
-        color: $gray;
+        padding-left: .75rem;
+        color: $gray-light;
         font-weight: normal;
+        text-transform: uppercase;
       }
       &.group-option {
-        padding-left: 1rem;
+        padding-left: 1.5rem;
       }
       &.active-result {
         cursor: pointer;
@@ -358,3 +360,17 @@
     cursor: default;
   }
 }
+.chosen-container-optgroup-clickable {
+  li {
+    &.group-result {
+      text-transform: none !important;
+      &:hover {
+        background-color: $link-color;
+        color: white;
+        cursor:pointer;
+      }
+    }
+  }
+}
+
+
