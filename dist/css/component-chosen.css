@@ -3,7 +3,7 @@
  *
  *
  * Bootstrap 4 Component - Chosen
- * Version: 1.0.1
+ * Version: 1.0.3
  * Copyright (c) 2017 Martin Haubek
  *
  *
@@ -203,9 +203,8 @@
   border-bottom-left-radius: 0.25rem;
   background-clip: padding-box; }
 
-.chosen-container-single-nosearch .chosen-search input[type="text"] {
-  position: absolute;
-  left: -9000px; }
+.chosen-container-single-nosearch .chosen-search {
+  display: none; }
 
 .chosen-container-multi .chosen-choices {
   background-color: #fff;

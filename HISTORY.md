@@ -1,5 +1,9 @@
 # Release History
 
+## 1.0.3
+
+* `chosen-container-single-nosearch` now `display:none` for the `chosen-search` div
+
 ## 1.0.2
 
 * Support for `optgroup` and clickable `optgroup`
