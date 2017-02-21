@@ -222,10 +222,7 @@
 }
 .chosen-container-single-nosearch {
   .chosen-search {
-    input[type="text"] {
-      position: absolute;
-      left: -9000px;
-    }
+    display: none;
   }
 }
 .chosen-container-multi {
