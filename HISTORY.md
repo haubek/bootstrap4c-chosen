@@ -1,5 +1,9 @@
 # Release History
 
+## 1.0.4
+
+* Fixed error
+
 ## 1.0.3
 
 * `chosen-container-single-nosearch` now `display:none` for the `chosen-search` div
