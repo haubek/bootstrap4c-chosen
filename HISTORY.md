@@ -1,5 +1,11 @@
 # Release History
 
+## 1.0.6
+
+* Upgraded to Bootstrap 4.0.0
+* Fixed layout issue (#2)
+* Added text.html
+
 ## 1.0.5
 
 * SASS SVG URI

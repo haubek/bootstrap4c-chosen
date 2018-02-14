@@ -4,20 +4,20 @@
 
 This is a Fork of **alxlit**'s great stylesheet (https://github.com/alxlit/bootstrap-chosen).
 
-The Bootstrap4C Chosen is a simple Bootstrap 4 styled component for the brilliant Harvest Chosen jQuery plugin (https://github.com/harvesthq/chosen). The component change the default bitmap icons into nice SVG and work better with the Bootstrap 4 variables.
+The Bootstrap4C Chosen is a simple Bootstrap 4 styled component for the brilliant Harvest Chosen jQuery plugin (https://github.com/harvesthq/chosen). The component change the default bitmap icons into nice SVG and works better with the Bootstrap 4 variables.
 
 See demo here => https://haubek.github.io
 
-### Bower install
+### NPM install
 
 ```
-bower install bootstrap4c-chosen
+npm install bootstrap4c-chosen
 ```
 
 ### CSS
 
 ```
-<link href="path/to/component-chosen.css" rel="stylesheet">
+<link href="path/to/component-chosen.min.css" rel="stylesheet">
 ```
 
 ### HTML5 markup

@@ -29,7 +29,7 @@
     position: relative;
     max-height: 15rem;
     padding: .5rem 0 0 0;
-    color: $gray;
+    color: $chosen-gray-dark;
     overflow-x: hidden;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
@@ -41,13 +41,13 @@
       padding: .25rem .25rem .25rem 1.5rem;
       em {
         font-style: normal;
-        color: $gray-dark;
+        color: $chosen-gray-dark;
       }
       &.group-result {
         display: list-item;
         cursor: default;
         padding-left: .75rem;
-        color: $gray-light;
+        color: $chosen-gray;
         font-weight: normal;
         text-transform: uppercase;
       }
@@ -59,7 +59,7 @@
         display: list-item;
       }
       &.result-selected {
-        color: $gray-dark;
+        color: $chosen-gray-darker;
         &:before {
           display: inline-block;
           position: relative;
@@ -68,7 +68,7 @@
           height: 1.25rem;
           margin-left: -1.25rem;
           content: "";
-          background-image: svg-uri("<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='#{$chosen-svg-color}' d='#{$chosen-svg-selected}'/></svg>");
+          background-image: svg-uri("<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='#{$chosen-svg-color-selected}' d='#{$chosen-svg-selected}'/></svg>");
           background-size: 1.25rem 1.25rem;
           background-position: center center;
           background-repeat: no-repeat;
@@ -88,13 +88,13 @@
       }
       &.disabled-result {
         display: list-item;
-        color: $gray-light;
+        color: $chosen-gray-light;
       }
     }
     .no-results {
       display: list-item;
       padding: .25rem 0 1rem 1.065rem;
-      color: $brand-danger;
+      color: $chosen-danger;
     }
   }
   .chosen-results-scroll {
@@ -122,11 +122,11 @@
     @include border-top-radius($chosen-border-radius);
     @include border-bottom-radius($chosen-border-radius);
     @include box-shadow($chosen-box-shadow);
-    color: $gray-dark;
+    color: $chosen-gray-dark;
     display: block;
-    height: ($chosen-height + .125);
+    height: $chosen-height;
     overflow: hidden;
-    line-height: ($chosen-height + .125);
+    line-height: $chosen-height;
     padding: 0 0 0 .75rem;
     position: relative;
     text-decoration: none;
@@ -180,7 +180,17 @@
     }
   }
   .chosen-default {
-    color: $gray-light;
+    color: $chosen-gray;
+  }
+  a:not([href]):not([tabindex]) {
+    color: $chosen-gray !important;
+  }
+  a:not([href]):not([tabindex]).chosen-single:not(.chosen-default) {
+    color: $chosen-gray-dark !important;
+  }
+  .chosen-search-input {
+    display: none;
+    border: none;
   }
   .chosen-search {
     margin: 0;
@@ -202,7 +212,7 @@
       background-repeat: no-repeat;
     }
     input[type="text"] {
-      background-color: $gray-lightest;
+      background-color: $chosen-gray-lightest;
       border: $chosen-border;
       outline: none;
       @include border-top-radius($chosen-border-radius);
@@ -250,7 +260,7 @@
         background: transparent !important;
         border: 0 !important;
         @include box-shadow(none);
-        color: $gray;
+        color: $chosen-gray;
         height: $chosen-multi-height;
         margin: 0;
         padding: 0 0 0 .75rem;
@@ -258,7 +268,7 @@
         width: 100% !important;
       }
       .default {
-        color: $gray-light;
+        color: $chosen-gray-light;
       }
     }
     .search-choice {
@@ -269,13 +279,13 @@
       margin: .35rem 0 0 .5rem;
       padding: .25rem 1.5rem .25rem .25rem;
       border: $chosen-border;
-      background-color: $gray-lightest;
+      background-color: $chosen-gray-lightest;
       @include border-top-radius($chosen-border-radius);
       @include border-bottom-radius($chosen-border-radius);
       cursor: default;
       font-size: $font-size-sm;
       line-height: 1;
-      color: $gray-dark;
+      color: $chosen-gray-dark;
       .search-choice-close {
         display: inline-block;
         position: absolute;
@@ -294,7 +304,7 @@
       }
     }
     .search-choice-focus {
-      background: $gray-lighter;
+      background: $chosen-gray-lighter;
       .search-choice-close {
         background-position: right -11px;
       }
@@ -340,11 +350,16 @@
     @include box-shadow($chosen-focus-box-shadow);
     @include transition($chosen-focus-transition);
     .search-field input[type="text"] {
-      color: $gray-dark !important;
+      color: $chosen-gray-dark !important;
     }
   }
   &.chosen-with-drop .chosen-choices {
     @include border-bottom-radius(0);
+  }
+  &.chosen-with-drop {
+    .chosen-search-input {
+      display: inline-block;
+    }
   }
 }
 .chosen-disabled {
@@ -369,5 +384,3 @@
     }
   }
 }
-
-
