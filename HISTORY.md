@@ -4,7 +4,7 @@
 
 * Upgraded to Bootstrap 4.0.0
 * Fixed layout issue (#2)
-* Added text.html
+* Added test.html
 
 ## 1.0.5
 
