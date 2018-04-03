@@ -1,5 +1,9 @@
 # Release History
 
+## 1.0.7
+
+* Added support for `.is-valid` and `.is-invalid`
+
 ## 1.0.6
 
 * Upgraded to Bootstrap 4.0.0

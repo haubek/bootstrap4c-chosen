@@ -3,8 +3,8 @@
  *
  *
  * Bootstrap 4 Component - Chosen
- * Version: 1.0.5
- * Copyright (c) 2017 Martin Haubek
+ * Version: 1.0.7
+ * Copyright (c) 2017-18 Martin Haubek
  *
  *
  *
@@ -336,3 +336,17 @@
     background-color: #007bff;
     color: white;
     cursor: pointer; }
+
+.chosen-container.is-valid .chosen-single,
+.chosen-container.is-valid .chosen-choices,
+.chosen-container.is-valid .chosen-drop, .chosen-container:valid .chosen-single,
+.chosen-container:valid .chosen-choices,
+.chosen-container:valid .chosen-drop {
+  border-color: #28a745; }
+
+.chosen-container.is-invalid .chosen-single,
+.chosen-container.is-invalid .chosen-choices,
+.chosen-container.is-invalid .chosen-drop, .chosen-container:invalid .chosen-single,
+.chosen-container:invalid .chosen-choices,
+.chosen-container:invalid .chosen-drop {
+  border-color: #dc3545; }
