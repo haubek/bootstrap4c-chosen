@@ -3,7 +3,7 @@
  *
  *
  * Bootstrap 4 Component - Chosen
- * Version: 1.0.7
+ * Version: 1.0.8
  * Copyright (c) 2017-18 Martin Haubek
  *
  *
@@ -287,6 +287,9 @@
 .chosen-container-active .chosen-single {
   border: 1px solid #80bdff;
   transition: border linear 0ms, box-shadow linear 0ms; }
+  @media screen and (prefers-reduced-motion: reduce) {
+    .chosen-container-active .chosen-single {
+      transition: none; } }
 
 .chosen-container-active.chosen-with-drop .chosen-single {
   background-color: #fff;
@@ -294,6 +297,9 @@
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
   transition: border linear 0ms, box-shadow linear 0ms; }
+  @media screen and (prefers-reduced-motion: reduce) {
+    .chosen-container-active.chosen-with-drop .chosen-single {
+      transition: none; } }
   .chosen-container-active.chosen-with-drop .chosen-single div:after {
     display: inline-block;
     position: relative;
@@ -312,6 +318,9 @@
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
   transition: border linear 0ms, box-shadow linear 0ms; }
+  @media screen and (prefers-reduced-motion: reduce) {
+    .chosen-container-active .chosen-choices {
+      transition: none; } }
   .chosen-container-active .chosen-choices .search-field input[type="text"] {
     color: #6c757d !important; }
 
