@@ -1,5 +1,10 @@
 # Release History
 
+## 1.0.9
+
+* Upgraded to Bootstrap 4.1.1
+* Fixed focus input being visible (see #5)
+
 ## 1.0.8
 
 * Upgraded to Bootstrap 4.1.0
