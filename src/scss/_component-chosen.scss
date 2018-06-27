@@ -181,7 +181,7 @@
     color: $chosen-gray;
   }
   a:not([href]):not([tabindex]) {
-    color: $chosen-gray !important;
+    color: $chosen-placeholder-color !important;
   }
   a:not([href]):not([tabindex]).chosen-single:not(.chosen-default) {
     color: $chosen-gray-dark !important;
@@ -256,7 +256,7 @@
         background: transparent !important;
         border: 0 !important;
         @include box-shadow(none);
-        color: $chosen-gray;
+        color: $chosen-placeholder-color;
         height: $chosen-multi-height;
         margin: 0;
         padding: 0 0 0 .75rem;
@@ -408,3 +408,36 @@ input[type="text"].chosen-focus-input {
   @include box-shadow(none);
   outline: 0;
 }
+.input-group {
+  &:nth-of-type(1) {
+    .chosen-container {
+      .chosen-choices {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+    }
+  }
+  &:not(:nth-of-type(1)) {
+    .chosen-container {
+      .chosen-choices {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+    }
+    .input-group-prepend {
+      .input-group-text {
+        border-top-right-radius: $input-border-radius;
+        border-bottom-right-radius: $input-border-radius;
+      }
+    }
+  }
+  .chosen-container {
+    position: relative;
+    flex: 1 1 auto;
+    width: 1% !important;
+  }
+}
+
+
+
+

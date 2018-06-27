@@ -1,5 +1,9 @@
 # Release History
 
+## 1.0.10
+
+* Added support for input group (see #58)
+
 ## 1.0.9
 
 * Upgraded to Bootstrap 4.1.1

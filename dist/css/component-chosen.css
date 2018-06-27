@@ -3,7 +3,7 @@
  *
  *
  * Bootstrap 4 Component - Chosen
- * Version: 1.0.9
+ * Version: 1.0.10
  * Copyright (c) 2017-18 Martin Haubek
  *
  *
@@ -169,7 +169,7 @@
   color: #adb5bd; }
 
 .chosen-container-single a:not([href]):not([tabindex]) {
-  color: #adb5bd !important; }
+  color: #6c757d !important; }
 
 .chosen-container-single a:not([href]):not([tabindex]).chosen-single:not(.chosen-default) {
   color: #6c757d !important; }
@@ -239,7 +239,7 @@
     .chosen-container-multi .chosen-choices .search-field input[type="text"] {
       background: transparent !important;
       border: 0 !important;
-      color: #adb5bd;
+      color: #6c757d;
       height: calc(2.25rem + 2px);
       margin: 0;
       padding: 0 0 0 .75rem;
@@ -370,3 +370,21 @@ input[type="text"].chosen-focus-input {
   background: transparent !important;
   border: 0 !important;
   outline: 0; }
+
+.input-group:nth-of-type(1) .chosen-container .chosen-choices {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0; }
+
+.input-group:not(:nth-of-type(1)) .chosen-container .chosen-choices {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0; }
+
+.input-group:not(:nth-of-type(1)) .input-group-prepend .input-group-text {
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem; }
+
+.input-group .chosen-container {
+  position: relative;
+  -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+  width: 1% !important; }
