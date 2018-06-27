@@ -2,7 +2,7 @@
 
 ## 1.0.10
 
-* Added support for input group (see #58)
+* Added support for input group (see #6)
 
 ## 1.0.9
 
