@@ -1,0 +1,24 @@
+{
+  "name": "haubek/bootstrap4c-chosen",
+  "description": "Bootstrap 4 Component - Chosen",
+  "license": "MIT",
+  "author": {
+    "name": "Martin Haubek",
+    "email": "haubek@gmail.com"
+  },
+  "homepage": "https://haubek.github.io",
+  "keywords": [
+    "bootstrap",
+    "component",
+    "custom",
+    "chosen",
+    "sass",
+    "scss",
+    "css"
+  ],
+  "require": {
+    "twbs/bootstrap": "^4.1.1",
+    "harvesthq/chosen": "^1.8.3"
+  }
+}
+  
