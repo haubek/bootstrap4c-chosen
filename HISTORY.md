@@ -1,5 +1,10 @@
 # Release History
 
+## 1.0.11
+
+* Upgraded to Bootstrap 4.1.3
+* Added composer.json (see #7 + #8)
+
 ## 1.0.10
 
 * Added support for input group (see #6)
