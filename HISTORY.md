@@ -1,5 +1,9 @@
 # Release History
 
+## 1.0.12
+
+* Name error
+
 ## 1.0.11
 
 * Upgraded to Bootstrap 4.1.3
