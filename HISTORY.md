@@ -1,5 +1,9 @@
 # Release History
 
+## 1.0.13
+
+* Fixed height issue (see #9)
+
 ## 1.0.12
 
 * Name error
