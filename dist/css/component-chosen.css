@@ -3,7 +3,7 @@
  *
  *
  * Bootstrap 4 Component - Chosen
- * Version: 1.0.12
+ * Version: 1.0.13
  * Copyright (c) 2017-18 Martin Haubek
  *
  *
@@ -116,9 +116,9 @@
   border-bottom-left-radius: 0.25rem;
   color: #6c757d;
   display: block;
-  height: calc(2.25rem + 2px);
+  height: 2.25rem;
   overflow: hidden;
-  line-height: calc(2.25rem + 2px);
+  line-height: 2.25rem;
   padding: 0 0 0 .75rem;
   position: relative;
   text-decoration: none;
@@ -126,7 +126,7 @@
   .chosen-container-single .chosen-single abbr {
     display: inline-block;
     position: absolute;
-    top: .45rem;
+    top: .325rem;
     right: 2.5rem;
     width: 1.5rem;
     height: 1.5rem;
@@ -155,7 +155,7 @@
     .chosen-container-single .chosen-single div:after {
       display: inline-block;
       position: relative;
-      top: .25rem;
+      top: .125rem;
       left: -1rem;
       width: 2rem;
       height: 2rem;
@@ -240,7 +240,7 @@
       background: transparent !important;
       border: 0 !important;
       color: #6c757d;
-      height: calc(2.25rem + 2px);
+      height: 2.25rem;
       margin: 0;
       padding: 0 0 0 .75rem;
       outline: 0;
@@ -303,7 +303,7 @@
   .chosen-container-active.chosen-with-drop .chosen-single div:after {
     display: inline-block;
     position: relative;
-    top: .25rem;
+    top: .125rem;
     left: -1rem;
     width: 2rem;
     height: 2rem;
