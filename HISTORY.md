@@ -1,5 +1,12 @@
 # Release History
 
+## 1.1.0
+
+* Upgraded to Bootstrap 4.3.1
+* Added variables `max-width` and `truncate` (true by default) to choice
+* Added `background-color` and `box-shadow` styles (gradient) to `abbr`
+* Cleanup
+
 ## 1.0.13
 
 * Fixed height issue (see #9)

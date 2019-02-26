@@ -133,14 +133,16 @@
       display: inline-block;
       position: absolute;
       top: .325rem;
-      right: 2.5rem;
-      width: 1.5rem;
+      right: 2rem;
+      width: 2rem;
       height: 1.5rem;
       cursor: pointer;
       background-image: svg-uri("<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='#{$chosen-svg-close-color}' d='#{$chosen-svg-deselect}'/></svg>");
       background-size: 1.5rem 1.5rem;
       background-position: center center;
       background-repeat: no-repeat;
+      background-color: $chosen-background;
+      box-shadow: 4px 0 16px 16px $chosen-background;
       &:hover {
         background-image: svg-uri("<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='#{$chosen-svg-close-color-hover}' d='#{$chosen-svg-deselect}'/></svg>");
       }
@@ -174,6 +176,14 @@
         background-size: 2rem 2rem;
         background-position: center center;
         background-repeat: no-repeat;
+      }
+    }
+    &:not(.chosen-single-with-deselect) {
+      div {
+        &:after {
+          background-color: $chosen-background;
+          box-shadow: 4px 0 16px 16px $chosen-background;
+        }
       }
     }
   }
@@ -241,8 +251,8 @@
     cursor: text;
     height: auto !important;
     margin: 0;
+    padding: .175rem;
     overflow: hidden;
-    padding: 0;
     position: relative;
     li {
       float: left;
@@ -253,15 +263,14 @@
       padding: 0;
       white-space: nowrap;
       input[type="text"] {
-        background: transparent !important;
+        width: 100% !important;
+        margin: 0;
+        padding: .175rem .175rem .175rem .5rem;
         border: 0 !important;
+        background: transparent !important;
         @include box-shadow(none);
         color: $chosen-placeholder-color;
-        height: $chosen-multi-height;
-        margin: 0;
-        padding: 0 0 0 .75rem;
         outline: 0;
-        width: 100% !important;
       }
       .default {
         color: $chosen-gray-light;
@@ -270,7 +279,8 @@
     .search-choice {
       background-clip: padding-box;
       position: relative;
-      margin: .35rem 0 0 .5rem;
+      max-width: $chosen-choice-max-width;
+      margin: .175rem .25rem;
       padding: .25rem 1.5rem .25rem .25rem;
       border: $chosen-border;
       background-color: $chosen-gray-lightest;
@@ -280,6 +290,11 @@
       font-size: $font-size-sm;
       line-height: 1;
       color: $chosen-gray-dark;
+      @if $chosen-choice-truncate == true {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
       .search-choice-close {
         display: inline-block;
         position: absolute;
@@ -374,6 +389,9 @@
         background-color: $link-color;
         color: white;
         cursor: pointer;
+        em {
+          color: white;
+        }
       }
     }
   }
@@ -435,6 +453,11 @@ input[type="text"].chosen-focus-input {
     position: relative;
     flex: 1 1 auto;
     width: 1% !important;
+  }
+  .chosen-choices {
+    .search-field {
+      min-height: $chosen-multi-height;
+    }
   }
 }
 
