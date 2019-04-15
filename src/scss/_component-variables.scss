@@ -20,7 +20,7 @@ $chosen-drop-border:            $input-focus-border-color;
 $chosen-drop-box-shadow:        0 4px 5px 0 rgba(0,0,0,.075), 0 2px 5px 0 $input-focus-box-shadow;
 $chosen-drop-zindex:            1060;
 $chosen-focus-border:           1px solid $input-focus-border-color;
-$chosen-focus-box-shadow:       0 1px 1px rgba(0, 0, 0, .075) inset, 0 0 8px $chosen-border-color;
+$chosen-focus-box-shadow:       rgba($chosen-border-color, 0.5);
 $chosen-focus-transition:       border linear 0ms, box-shadow linear 0ms;
 $chosen-placeholder-color:      $input-placeholder-color;
 $chosen-height:                 $input-height;

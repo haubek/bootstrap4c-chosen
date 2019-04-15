@@ -3,7 +3,7 @@
  *
  *
  * Bootstrap 4 Component - Chosen
- * Version: 1.1.0
+ * Version: 1.1.1
  * Copyright (c) 2017-19 Martin Haubek
  *
  *
@@ -19,7 +19,11 @@
   width: 100% !important;
   font-size: 1rem;
   text-align: left;
-  vertical-align: middle; }
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
   .chosen-container .chosen-drop {
     background: #fff;
     border: 1px solid #80bdff;
@@ -180,7 +184,6 @@
   color: #6c757d !important; }
 
 .chosen-container-single .chosen-search-input {
-  display: none;
   border: none; }
 
 .chosen-container-single .chosen-search {
@@ -294,16 +297,24 @@
 
 .chosen-container-active .chosen-single {
   border: 1px solid #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(128, 189, 255, 0.5);
   transition: border linear 0ms, box-shadow linear 0ms; }
   @media (prefers-reduced-motion: reduce) {
     .chosen-container-active .chosen-single {
       transition: none; } }
+
+.chosen-container-active.is-valid .chosen-single {
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.4); }
+
+.chosen-container-active.is-invalid .chosen-single {
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.4); }
 
 .chosen-container-active.chosen-with-drop .chosen-single {
   background-color: #fff;
   border: 1px solid #80bdff;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
+  box-shadow: none;
   transition: border linear 0ms, box-shadow linear 0ms; }
   @media (prefers-reduced-motion: reduce) {
     .chosen-container-active.chosen-with-drop .chosen-single {

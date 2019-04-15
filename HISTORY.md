@@ -1,5 +1,10 @@
 # Release History
 
+## 1.1.1
+
+* Fixed tab issue (#11)
+* Style fixes
+
 ## 1.1.0
 
 * Upgraded to Bootstrap 4.3.1

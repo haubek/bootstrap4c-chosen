@@ -9,6 +9,7 @@
   font-size: $font-size-base;
   text-align: left;
   vertical-align: middle;
+  user-select: none;
   .chosen-drop {
     background: $chosen-background;
     border: 1px solid $chosen-drop-border;
@@ -197,7 +198,6 @@
     color: $chosen-gray-dark !important;
   }
   .chosen-search-input {
-    display: none;
     border: none;
   }
   .chosen-search {
@@ -328,14 +328,24 @@
 .chosen-container-active {
   .chosen-single {
     border: $chosen-focus-border;
-    @include box-shadow($chosen-focus-box-shadow);
+    box-shadow: 0 0 0 .2rem $chosen-focus-box-shadow;
     @include transition($chosen-focus-transition);
+  }
+  &.is-valid {
+    .chosen-single {
+      box-shadow: 0 0 0 .2rem rgba($chosen-success, 0.40);
+    }
+  }
+  &.is-invalid {
+    .chosen-single {
+      box-shadow: 0 0 0 .2rem rgba($chosen-danger, 0.40);
+    }
   }
   &.chosen-with-drop .chosen-single {
     background-color: $input-bg;
     border: $chosen-focus-border;
     @include border-bottom-radius(0);
-    @include box-shadow($chosen-focus-box-shadow);
+    box-shadow: none;
     @include transition($chosen-focus-transition);
     div {
       &:after {
@@ -460,7 +470,3 @@ input[type="text"].chosen-focus-input {
     }
   }
 }
-
-
-
-
