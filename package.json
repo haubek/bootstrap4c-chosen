@@ -39,7 +39,7 @@
     "gulp-clean-css": "^2.3.2",
     "gulp-plumber": "^1.0.1",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.1.0",
+    "gulp-sass": "^4.1.0",
     "gulp-strip-css-comments": "^1.2.0",
     "minimatch": "^3.0.4",
     "sass-svg-uri": "^1.0.0"
